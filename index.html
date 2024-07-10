@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferpizza</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons/delivery-guy-1424808_640.png">
+    <link href="./styles/fonts.css" rel="stylesheet">
+    <link href="./styles/rating.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./styles/header.css" rel="stylesheet">
+    <link href="./styles/basket.css" rel="stylesheet">
+    <link href="./styles/responsive.css" rel="stylesheet">
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/rating.js"></script>
+</head>
+
+<body onload="render()">
+    <header class="dFlexAlignCent">
+        <div class="dFlexAlignCent">
+            <a href="index.html"><img src="./img/icons/delivery-guy-1424808_640.png" class="logoImg"></a>
+            <h1>Lieferpizza</h1>
+        </div>
+
+        <h3>Pizzakarte</h3>
+
+        <a><img onclick="burgerMenu()" class="burger" src="./img/icons/burger.png"></a>
+    </header>
+
+    <div class="seperator"></div>
+
+    <div class="basketDiv">
+        <section id="basketContainer" class="basketContainer hideBasketResponsive">
+        </section>
+
+    </div>
+
+    <section class="restaurant">
+        <div>
+            <img src="./img/showcase.png" class="atfImage">
+            <img src="./img/icons/restaurant.png" class="restaurantLogo">
+        </div>
+
+        <div class="restaurantInfo">
+
+            <div class="restaurantName dFlexAlignCent" id="restaurantName">
+                <h2>Pizza Mama Heidenheim an der Brenz</h2>
+                <div>
+                    <a onclick="pizzaInfo()"><img src="./img/icons/information.png" class="bigButton"></a>
+                    <a onclick="like()"><img src="./img/icons/blackHeart.png" class="blackHeart" id="blackHeart"></a>
+                    <a onclick="like()"><img src="./img/icons/heart.png" class="redHeart" id="redHeart"></a>
+                </div>
+            </div>
+
+            <a onclick="rating()" class="star"><img src="./img/icons/star.png">4.5(2)</a>
+
+            <div class="costInfo dFlexAlignCent">
+                <img src="./img/icons/lock.png" class="symbol">
+                <p>Min. 20,00 €</p>
+                <img src="./img/icons/mtb-bike.png" class="symbol">
+                <p>Kostenlos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menuHeader" id="menuHeader">
+        <div class="flexRow">
+            <a id="catFav" class="categorys dFlexAlignCent" href="#offsetFav">Beliebt<img class="menuHeart"
+                    src="./img/icons/heart.png"></a>
+            <a id="catSpec" class="categorys dFlexAlignCent" href="#offsetSpec">Spezial</a>
+            <a id="catDrink" class="categorys dFlexAlignCent" href="#offsetDrink">Getränke</a>
+        </div>
+        <div class="seperator"></div>
+    </section>
+
+
+    <section id="recipees" class="menu">
+    </section>
+
+    <footer class="dFlexAlignCent">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+    </footer>
+
+    <div class="stickyBasket">
+        <button onclick="showBasketResponsive()" class="basketBtnRes" id="basketButtonResponsive">Warenkorb</button>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="infoBox" id="infoBox"></div>
+    </div>
+
+</body>
+
+</html>

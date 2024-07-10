@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    font-family: 'Source Serif 4';
+    scroll-behavior: smooth;
+}
+
+h2 {
+    padding-left: 16px;
+}
+
+h5 {
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+main {
+    text-align: center;
+    padding: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.basketDiv {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.atfImage {
+    position: relative;
+    top: -3px;
+    left: 0;
+    width: calc(100% - 344px);
+    height: 320px;
+    object-fit: cover;
+    border-bottom: solid black 1px;
+}
+
+.restaurantLogo {
+    position: absolute;
+    height: 72px;
+    right: 60%;
+    border-radius: 8px;
+    left: 52px;
+    top: 342px;
+}
+
+.restaurantInfo {
+    width: calc(100% - 344px);
+}
+
+.restaurantName {
+    justify-content: space-between;
+}
+
+.bigButton {
+    cursor: pointer;
+    padding: 8px 8px 8px 8px;
+    border-radius: 50%;
+    height: 20px;
+    background-color: #f5f2f0d5;
+}
+
+.blackHeart {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 36px;
+    background-color: #f5f2f0d5;
+    margin-right: 8px;
+}
+
+.redHeart {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 36px;
+    background-color: #f5f2f0d5;
+    margin-right: 8px;
+}
+
+.costInfo {
+    padding: 6px;
+}
+
+p {
+    padding: 0px 10px 0px 5px;
+}
+
+b {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    display: flex;
+    cursor: pointer;
+    height: 20px;
+    width: 70px;
+}
+
+.symbol {
+    height: 12px;
+}
+
+.menuHeader {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 344px);
+    height: 55px;
+}
+
+.menuHeart {
+    height: 20px;
+}
+
+.favHeart {
+    height: 38px;
+}
+
+.categorys {
+    background-color: #f5f2f0d5;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 6px;
+}
+
+.categorys:hover {
+    background-color: black;
+    color: white;
+}
+
+.darkCategory {
+    background-color: black;
+    color: white;
+}
+
+.dFlexAlignCent {
+    display: flex;
+    align-items: center;
+}
+
+.offsetBox {
+    display: block;
+    height: 52px ;
+    margin-top: -52px;
+    visibility: hidden; 
+}
+
+.recipeeHead {
+    margin-top: 12px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    font-size: 28px;
+}
+
+.recipees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+}
+
+.postBox {
+    border-radius: 16px;
+    border: solid black 1px;
+    width: 75%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.postBox:hover {
+    background-color: #dadada;
+}
+
+.price {
+    height: 0;
+    position: relative;
+    top: 90px;
+    font-weight: 800;
+}
+
+.description {
+    height: 0;
+    width: calc(100% - 175px);
+    margin-top: -20px;
+}
+
+.addButton {
+    position: relative;
+    bottom: 30px;
+    width: 20px;
+    align-self: flex-end;
+    transform: rotate(45deg);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 4px;
+}
+
+.menuPic {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    align-self: flex-end;
+    border-radius: 12px;
+    margin-top: 6px;
+    position: relative;
+    right: 40px;
+    bottom: 10px;
+}
+
+.sticky {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.stickyMenu {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    width: calc(100% - 344px);
+    background-color: #fcfcfc;
+}

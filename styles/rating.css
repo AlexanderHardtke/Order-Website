@@ -1,0 +1,85 @@
+h6 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    border-radius: 16px;
+    height: 80%;
+    width: 60%;
+    padding: 8px;
+}
+
+.infoBoxTitle {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.overlay {
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+}
+
+.closeX {
+    height: 18px;
+    cursor: pointer;
+    padding-right: 16px;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ratingBox {
+    border-radius: 16px;
+    border: solid black 1px;
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-bottom: 20px;
+    place-self: center;
+}
+
+.ratingComment {
+    font-size: 14px;
+    text-wrap: wrap;
+}
+
+.maps {
+    width: 100%;
+    height: 450px;
+    border-style: none;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.clockSymbol {
+    height: 16px;
+    margin-right: 8px;
+}
+
+.flexEnd {
+    align-self: flex-end;
+}
+
+.dNone {
+    display: none;
+}
